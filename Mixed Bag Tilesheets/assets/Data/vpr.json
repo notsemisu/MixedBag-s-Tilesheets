@@ -109,6 +109,14 @@
 			"Target": "Maps/fall_z_grasspath",
 			"FromFile": "assets/maps/vpr/green fall/{{TargetWithoutPath}}_green.png",
 			"PatchMode": "Overlay"
+		},
+		//z_rndpath
+		{
+			"LogName": "Rounded and Diagonal Path Green Fall",
+			"Action": "EditImage",
+			"Target": "Maps/fall_z_rndpath",
+			"FromFile": "assets/maps/vpr/green fall/{{TargetWithoutPath}}_green.png",
+			"PatchMode": "Overlay"
 		}
 	]
 }

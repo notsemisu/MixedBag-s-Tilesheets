@@ -68,15 +68,6 @@
 			"Name": "GreenFall",
 			"Value": "{{JefGrizli.RedrawPelicanTownC/GreenFall}}",
 			"When": { "HasMod": "JefGrizli.RedrawPelicanTownC" }
-		},
-		{
-			"Name": "LD Fall",
-			"Value": ""
-		},
-		{
-			"Name": "LD Fall",
-			"Value": "_fall",
-			"When": { "Season": "fall" }
 		}
 	],
 	"Changes": [
@@ -88,6 +79,10 @@
         {
             "Action": "Include",
             "FromFile": "assets/data/dirtpath.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/data/rndpath.json"
         },
 		//Config
 			{

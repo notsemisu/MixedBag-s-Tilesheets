@@ -63,6 +63,26 @@
 				"HasFile:{{FromFile}}": true,
 				"HasFile:{{season}}_{{FromFile}}": false
 				}
+		},
+		//z_rndpath
+		{
+			"LogName": "Dirt Path Rounded",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_z_rndpath",
+			"FromFile": "assets/maps/{{rcvariant}}/rounded/{{season}}_z_rndpath_rnd.png",
+			"PatchMode": "Overlay",
+			"When": { "HasFile:{{FromFile}}": true }
+		},
+		{
+			"LogName": "Rounded and Diagonal Path Rounded",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_z_rndpath",
+			"FromFile": "assets/maps/{{rcvariant}}/rounded/z_rndpath_rnd.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:{{season}}_{{FromFile}}": false
+				}
 		}
 	]
 }
