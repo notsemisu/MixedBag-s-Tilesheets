@@ -33,6 +33,11 @@
 		},
 		{
 			"Name": "Variant",
+			"Value": "Earthy",
+			"When": { "HasMod": "DaisyNiko.EarthyRecolour" }
+		},
+		{
+			"Name": "Variant",
 			"Value": "Naturally",
 			"When": { "HasMod": "Narianka.NaturallyValley" }
 		},
@@ -48,17 +53,12 @@
 		},
 		{
 			"Name": "RCVariant",
-			"Value": "Vanilla"
+			"Value": "{{Variant}}"
 		},
 		{
 			"Name": "RCVariant",
-			"Value": "VPR",
-			"When": { "HasMod": "grapeponta.VibrantPastoralRecolor" }
-		},
-		{
-			"Name": "RCVariant",
-			"Value": "Wittily",
-			"When": { "HasMod": "Acerbicon.Recolor" }
+			"Value": "Vanilla",
+			"When": { "HasMod": "Narianka.NaturallyValley" }
 		},
 		{
 			"Name": "GreenFall",
