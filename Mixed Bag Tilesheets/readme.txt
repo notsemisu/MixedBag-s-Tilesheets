@@ -9,7 +9,11 @@ Vanilla town pathways are replaced with their equivalent on z_grasspath (slight 
 
 z_dirtpath
 
-Vanilla tiles on outdoorsTileSheet (red, black) and island_tilesheet_1 (violet) are replaced with their equivalent on z_dirtpath (slight shadow adjustment and minor changes/transition fixes).
+Vanilla tiles on _outdoorsTileSheet (red, black) and _island_tilesheet_1 (blue) are replaced with their equivalent on z_dirtpath (slight shadow adjustment and minor changes/transition fixes).
 Vanilla tiles on outdoorsTileSheet (white) are optional replacements; if replaced, replace their vanilla pathway eqivalent on z_dirtpath (white box), too
-Tile-ID to represented on tile-id_z_dirtpath image file, with their pathway eqivalent
-Tiles may not be replaced in all seasons
+Tile-ID to be taken from tile-id_z_dirtpath image file, with their pathway eqivalent
+Tile replacement may depend on season all seasons
+
+2.0
+Vanilla tiles on _island_tilesheet_1 (light blue) are replaced with their equivalent on z_dirtpath; 706 during all seasons but and 640 during winter.
+Vanilla tiles on island_tilesheet_1 (magenta) are replaced with their equivalent on z_dirtpath (ginger island replacements).

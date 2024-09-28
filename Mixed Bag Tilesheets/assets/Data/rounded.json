@@ -1,0 +1,68 @@
+{
+	"Changes": [
+	//Rounded Corners
+		//z_dirtpath
+		{
+			"LogName": "Dirt Path Rounded",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_z_dirtpath",
+			"FromFile": "assets/maps/{{rcvariant}}/rounded/{{season}}_z_dirtpath_rnd.png",
+			"PatchMode": "Overlay",
+			"When": { "HasFile:{{FromFile}}": true }
+		},
+		{
+			"LogName": "Dirt Path Rounded",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_z_dirtpath",
+			"FromFile": "assets/maps/{{rcvariant}}/rounded/z_dirtpath_rnd.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:{{season}}_{{FromFile}}": false
+				}
+		},
+		//z_grasspath
+		{
+			"LogName": "Town Path Rounded",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/maps/{{rcvariant}}/rounded/{{season}}_z_grasspath_rnd.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 0, "Width": 96, "Height": 80 },
+			"ToArea": { "X": 0, "Y": 304, "Width": 96, "Height": 80 },
+			"When": { "HasFile:{{FromFile}}": true }
+		},
+		{
+			"LogName": "Town Path Rounded",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/maps/{{rcvariant}}/rounded/z_grasspath_rnd.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 0, "Width": 96, "Height": 80 },
+			"ToArea": { "X": 0, "Y": 304, "Width": 96, "Height": 80 },
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:{{season}}_{{FromFile}}": false
+				}
+		},
+		{
+			"LogName": "Grass Path Rounded",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_z_grasspath",
+			"FromFile": "assets/maps/{{rcvariant}}/rounded/{{season}}_z_grasspath_rnd.png",
+			"PatchMode": "Overlay",
+			"When": { "HasFile:{{FromFile}}": true }
+		},
+		{
+			"LogName": "Grass Path Rounded",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_z_grasspath",
+			"FromFile": "assets/maps/{{rcvariant}}/rounded/z_grasspath_rnd.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasFile:{{season}}_{{FromFile}}": false
+				}
+		}
+	]
+}
