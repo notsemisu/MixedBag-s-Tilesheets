@@ -161,6 +161,79 @@
 			"PatchMode": "Overlay",
 			"FromArea": { "X": 80, "Y": 32, "Width": 16, "Height": 16 },
 			"ToArea": { "X": 144, "Y": 416, "Width": 16, "Height": 16 }
+		},
+		//outdoorsTileSheet2
+		{
+			"LogName": "ots2 743 759 775",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_outdoorsTileSheet2",
+			"FromFile": "assets/maps/{{variant}}/{{season}}_z_dirtpath.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 112, "Width": 16, "Height": 48 },
+			"ToArea": { "X": 112, "Y": 736, "Width": 16, "Height": 48 }
+		},
+		{
+			"LogName": "ots2 742 758 774",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_outdoorsTileSheet2",
+			"FromFile": "assets/maps/{{variant}}/{{season}}_z_dirtpath.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 16, "Y": 112, "Width": 16, "Height": 48 },
+			"ToArea": { "X": 96, "Y": 736, "Width": 16, "Height": 48 }
+		},
+		{
+			"LogName": "ots2 804",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_outdoorsTileSheet2",
+			"FromFile": "assets/maps/{{variant}}/{{season}}_z_dirtpath.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 80, "Y": 112, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 64, "Y": 800, "Width": 16, "Height": 16 }
+		},
+		{
+			"LogName": "ots2 788",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_outdoorsTileSheet2",
+			"FromFile": "assets/maps/{{variant}}/{{season}}_z_dirtpath.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 96, "Y": 160, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 64, "Y": 784, "Width": 16, "Height": 16 }
+		},
+		{
+			"LogName": "ots2 806",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_outdoorsTileSheet2",
+			"FromFile": "assets/maps/{{variant}}/{{season}}_z_dirtpath.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 96, "Y": 112, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 96, "Y": 800, "Width": 16, "Height": 16 }
+		},
+		{
+			"LogName": "ots2 790",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_outdoorsTileSheet2",
+			"FromFile": "assets/maps/{{variant}}/{{season}}_z_dirtpath.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 112, "Y": 112, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 96, "Y": 784, "Width": 16, "Height": 16 }
+		},
+		{
+			"LogName": "ots2 789 805",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_outdoorsTileSheet2",
+			"FromFile": "assets/maps/{{variant}}/{{season}}_z_dirtpath.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 96, "Y": 128, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 80, "Y": 784, "Width": 16, "Height": 32 }
+		},
+		{
+			"LogName": "ots2 791 807",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_outdoorsTileSheet2",
+			"FromFile": "assets/maps/{{variant}}/{{season}}_z_dirtpath.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 112, "Y": 128, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 112, "Y": 784, "Width": 16, "Height": 32 }
 		}
 	]
 }

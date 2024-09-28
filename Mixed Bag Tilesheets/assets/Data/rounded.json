@@ -21,6 +21,25 @@
 				"HasFile:{{season}}_{{FromFile}}": false
 				}
 		},
+			//outdoorsTileSheet2
+			{
+				"LogName": "ots2 804",
+				"Action": "EditImage",
+				"Target": "Maps/{{season}}_outdoorsTileSheet2",
+				"FromFile": "assets/maps/{{rcvariant}}/rounded/z_dirtpath_rnd.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 80, "Y": 112, "Width": 16, "Height": 16 },
+				"ToArea": { "X": 64, "Y": 800, "Width": 16, "Height": 16 }
+			},
+			{
+				"LogName": "ots2 788",
+				"Action": "EditImage",
+				"Target": "Maps/{{season}}_outdoorsTileSheet2",
+				"FromFile": "assets/maps/{{rcvariant}}/rounded/z_dirtpath_rnd.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 96, "Y": 160, "Width": 16, "Height": 16 },
+				"ToArea": { "X": 64, "Y": 784, "Width": 16, "Height": 16 }
+			},
 		//z_grasspath
 		{
 			"LogName": "Town Path Rounded",

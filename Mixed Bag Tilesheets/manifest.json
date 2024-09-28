@@ -1,10 +1,10 @@
 {
 	"Name": "Mixed Bag Tilesheets",
 	"Author": "MixedBag",
-	"Version": "2.2.0",
+	"Version": "3.0.0",
 	"Description": "A mixed bag of useful tilesheets.",
 	"UniqueID": "MixedBag.Tilesheets",
-	"MinimumApiVersion": "3.13.0",
+	"MinimumApiVersion": "4.0.0",
 	"UpdateKeys": [ "Nexus:15707" ],
 	"ContentPackFor":
 				{"UniqueID": "Pathoschild.ContentPatcher"},
