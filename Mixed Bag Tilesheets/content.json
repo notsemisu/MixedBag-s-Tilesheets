@@ -1,29 +1,20 @@
 {
-	"Format": "2.0.0",
+	"Format": "2.4.0",
 	"ConfigSchema": {
-		"Rounded Corners": {
+		"RoundedCorners": {
 			"AllowValues": "true, false",
 			"Default": "false",
-			"Description": "Toggles roundness of pathway corners.",
 			"Section": "Pathways"
 			},
-		"Green Fall": {
-			"AllowValues": "true, false",
-			"Default": "true",
-			"Description": "Toggles green grass during fall for VPR.",
-			"Section": "Recolour Options"
-			},
-		"Light Dirt": {
+		"BlueSpring": {
 			"AllowValues": "true, false",
 			"Default": "false",
-			"Description": "Toggles light dirt colours for Wittily.",
-			"Section": "Recolour Options"
+			"Section": "Starblue"
 			},
-		"Don't fix me!": {
+		"LightDirt": {
 			"AllowValues": "true, false",
 			"Default": "false",
-			"Description": "Prevents fixing of partially recoloured tiles for Naturally.",
-			"Section": "Recolour Options"
+			"Section": "Wittily"
 			}
 	},
 	"DynamicTokens": [
@@ -38,8 +29,8 @@
 		},
 		{
 			"Name": "Variant",
-			"Value": "Naturally",
-			"When": { "HasMod": "Narianka.NaturallyValley" }
+			"Value": "Starblue",
+			"When": { "HasMod": "Lita.StarblueValleyUnofficial" }
 		},
 		{
 			"Name": "Variant",
@@ -54,67 +45,50 @@
 		{
 			"Name": "RCVariant",
 			"Value": "{{Variant}}"
-		},
-		{
-			"Name": "RCVariant",
-			"Value": "Vanilla",
-			"When": { "HasMod": "Narianka.NaturallyValley" }
-		},
-		{
-			"Name": "GreenFall",
-			"Value": "{{Green Fall}}"
-		},
-		{
-			"Name": "GreenFall",
-			"Value": "{{JefGrizli.RedrawPelicanTownC/GreenFall}}",
-			"When": { "HasMod": "JefGrizli.RedrawPelicanTownC" }
 		}
 	],
 	"Changes": [
 	//Asset Load
         {
             "Action": "Include",
-            "FromFile": "assets/data/grasspath.json"
+            "FromFile": "Data/grasspath.json"
         },
         {
             "Action": "Include",
-            "FromFile": "assets/data/dirtpath.json"
+            "FromFile": "Data/dirtpath.json"
         },
         {
             "Action": "Include",
-            "FromFile": "assets/data/rndpath.json"
+            "FromFile": "Data/rndpath.json"
         },
 		//Config
 			{
 				"Action": "Include",
-				"FromFile": "assets/data/rounded.json",
-				"When": { "Rounded Corners": true }
+				"FromFile": "Data/rounded.json",
+				"When": { "RoundedCorners": true }
 			},
 			{
 				"Action": "Include",
-				"FromFile": "assets/data/naturally.json",
+				"FromFile": "Data/starblue.json",
 				"When": {
-					"HasMod": "Narianka.NaturallyValley",
-					"Season": "fall",
-					"Don't fix me!": false
+					"HasMod": "Lita.StarblueValleyUnofficial",
+					"BlueSpring": true
 					}
 			},
 			{
 				"Action": "Include",
-				"FromFile": "assets/data/vpr.json",
+				"FromFile": "Data/vpr.json",
 				"When": {
-					"HasMod": "grapeponta.VibrantPastoralRecolor",
-					"Season": "fall",
-					"GreenFall": true
+					"HasMod": "grapeponta.VibrantPastoralRecolor, VibrantPastoral.C",
+					"VibrantPastoral.C/GreenFall": true
 					}
 			},
 			{
 				"Action": "Include",
-				"FromFile": "assets/data/wittily.json",
+				"FromFile": "Data/wittily.json",
 				"When": {
 					"HasMod": "Acerbicon.Recolor",
-					"Light Dirt": true,
-					"Season |contains=winter": false,
+					"LightDirt": true
 					}
 			}
 	]

@@ -1,10 +1,10 @@
 {
-	"Name": "Mixed Bag Tilesheets",
+	"Name": "MixedBag Tilesheets",
 	"Author": "MixedBag",
-	"Version": "3.0.0",
+	"Version": "3.1.0",
 	"Description": "A mixed bag of useful tilesheets.",
 	"UniqueID": "MixedBag.Tilesheets",
-	"MinimumApiVersion": "4.0.0",
+	"MinimumApiVersion": "4.1.0",
 	"UpdateKeys": [ "Nexus:15707" ],
 	"ContentPackFor":
 				{"UniqueID": "Pathoschild.ContentPatcher"},
@@ -18,12 +18,9 @@
 				{"UniqueID": "grapeponta.VibrantPastoralRecolor",
                 "IsRequired": false
 				},
-				{"UniqueID": "Narianka.NaturallyValley",
+				{"UniqueID": "Lita.StarblueValleyUnofficial",
 				"IsRequired": false
-                },
-				{"UniqueID": "JefGrizli.RedrawPelicanTownC",
-				"IsRequired": false
-				}
+                }
 	]
 	
 }
