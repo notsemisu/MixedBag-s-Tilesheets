@@ -4,7 +4,7 @@
 	"Version": "3.1.0",
 	"Description": "A mixed bag of useful tilesheets.",
 	"UniqueID": "MixedBag.Tilesheets",
-	"MinimumApiVersion": "4.1.0",
+	"MinimumApiVersion": "4.1.2",
 	"UpdateKeys": [ "Nexus:15707" ],
 	"ContentPackFor":
 				{"UniqueID": "Pathoschild.ContentPatcher"},
