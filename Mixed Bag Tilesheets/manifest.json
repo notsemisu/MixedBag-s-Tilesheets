@@ -1,7 +1,7 @@
 {
 	"Name": "MixedBag Tilesheets",
 	"Author": "MixedBag",
-	"Version": "3.1.0",
+	"Version": "3.1.1",
 	"Description": "A mixed bag of useful tilesheets.",
 	"UniqueID": "MixedBag.Tilesheets",
 	"MinimumApiVersion": "4.1.2",
@@ -15,7 +15,7 @@
 				{"UniqueID": "DaisyNiko.EarthyRecolour",
                 "IsRequired": false
 				},
-				{"UniqueID": "grapeponta.VibrantPastoralRecolor",
+				{"UniqueID": "VibrantPastoral.C",
                 "IsRequired": false
 				},
 				{"UniqueID": "Lita.StarblueValleyUnofficial",
