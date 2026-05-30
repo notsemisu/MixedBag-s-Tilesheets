@@ -1,5 +1,10 @@
 Relevant to mod creators only!
 
+3.2.0
+Updated dependencies: Content Patcher 2.8.0, SMAPI 4.1.10
+
+――――――――――――――――――――――――――――――
+
 3.1.0
 Updated dependencies: Content Patcher 2.4.0, SMAPI 4.1.2
 
