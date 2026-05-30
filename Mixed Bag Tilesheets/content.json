@@ -1,5 +1,5 @@
 {
-	"Format": "2.4.0",
+	"Format": "2.8.0",
 	"ConfigSchema": {
 		"RoundedCorners": {
 			"AllowValues": "true, false",
@@ -15,12 +15,22 @@
 			"AllowValues": "true, false",
 			"Default": "false",
 			"Section": "Wittily"
+			},
+		"ColourOverride": {
+			"AllowValues": "Vanilla, Earthy, Starblue, VibrantPastoral, Wittily",
+			"Default": "",
+			"Section": "Overrides"
 			}
 	},
 	"DynamicTokens": [
 		{
 			"Name": "Variant",
 			"Value": "Vanilla"
+		},
+		{
+			"Name": "Variant",
+			"Value": "VibrantPastoral",
+			"When": { "HasMod": "grapeponta.VibrantPastoralRecolor" }
 		},
 		{
 			"Name": "Variant",
@@ -34,17 +44,13 @@
 		},
 		{
 			"Name": "Variant",
-			"Value": "VPR",
-			"When": { "HasMod": "grapeponta.VibrantPastoralRecolor" }
-		},
-		{
-			"Name": "Variant",
 			"Value": "Wittily",
 			"When": { "HasMod": "Acerbicon.Recolor" }
 		},
 		{
-			"Name": "RCVariant",
-			"Value": "{{Variant}}"
+			"Name": "Variant",
+			"Value": "{{ColourOverride}}",
+			"When": { "ColourOverride |contains=Vanilla, Earthy, Starblue, VibrantPastoral, Wittily": true }
 		}
 	],
 	"Changes": [
@@ -71,6 +77,7 @@
 				"Action": "Include",
 				"FromFile": "Data/starblue.json",
 				"When": {
+					"Variant": "Starblue",
 					"HasMod": "Lita.StarblueValleyUnofficial",
 					"BlueSpring": true
 					}
@@ -79,6 +86,7 @@
 				"Action": "Include",
 				"FromFile": "Data/vpr.json",
 				"When": {
+					"Variant": "VibrantPastoral",
 					"HasMod": "grapeponta.VibrantPastoralRecolor, VibrantPastoral.C",
 					"VibrantPastoral.C/GreenFall": true
 					}
@@ -87,6 +95,7 @@
 				"Action": "Include",
 				"FromFile": "Data/wittily.json",
 				"When": {
+					"Variant": "Wittily",
 					"HasMod": "Acerbicon.Recolor",
 					"LightDirt": true
 					}
