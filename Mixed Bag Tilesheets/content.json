@@ -18,6 +18,8 @@
 			},
 		"ColourOverride": {
 			"AllowValues": "Vanilla, Earthy, Starblue, VibrantPastoral, Wittily",
+			"AllowBlank": true,
+			"AllowMultiple": false,
 			"Default": "",
 			"Section": "Overrides"
 			}
