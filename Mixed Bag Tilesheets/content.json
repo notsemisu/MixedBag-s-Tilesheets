@@ -84,7 +84,7 @@
 			},
 			{
 				"Action": "Include",
-				"FromFile": "Data/vpr.json",
+				"FromFile": "Data/VibrantPastoral.json",
 				"When": {
 					"Variant": "VibrantPastoral",
 					"HasMod": "grapeponta.VibrantPastoralRecolor, VibrantPastoral.C",
